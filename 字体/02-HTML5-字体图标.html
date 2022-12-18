@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @font-face {
+            font-family: 'iconfont';
+            src: url('../fonts/iconfont.eot'); /* IE9*/
+            src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+            url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+        .myFont{
+            font-family: iconfont;
+        }
+        /*笑脸*/
+        .smile::before{
+            content: "\e641";
+            color: red;
+            font-size: 50px;
+        }
+        /*输出*/
+        .output::before{
+            content: "\e640";
+            color: blue;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<!--使用字体图标的时候，得自己指定你想使用的图片-->
+<span class="myFont smile"></span>
+<span class="myFont output"></span>
+<span class="myFont">&#xe642;</span>
+</body>
+</html>

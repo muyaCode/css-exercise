@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 500px;
+            height: 600px;
+            border: 1px solid red;
+            margin:0 auto;
+            /*设置父容器为盒子：会使每一个子元素自动变成伸缩项
+             当子元素的宽度和大于父容器宽度的时候，子元素会自动平均收缩*/
+            display: flex;
+            /*设置子元素的主轴方向上的排列方式*/
+            justify-content: space-around;
+
+        }
+        .first {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*flex-shrink:定义收缩比例，通过设置的值来计算收缩空间
+             比例值计算 ：当前空间的flex-shrink/所有兄弟元素的flex-shrink的和
+            默认值为1*/
+            flex-shrink: 2;
+        }
+        .second{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            flex-shrink: 1;
+        }
+        .third{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+</div>
+</body>
+</html>

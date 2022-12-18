@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @font-face {
+            font-family: 'shuangyuan';
+            src: url('../fonts/webfont.eot'); /* IE9*/
+            src: url('../fonts/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/webfont.woff') format('woff'), /* chrome、firefox */
+            url('../fonts/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('../fonts/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+        }
+        /*定义一个样式，使用自定义的web字体*/
+        .myFont{
+            font-family: shuangyuan;
+        }
+    </style>
+</head>
+<body>
+1.得自定义想生成对应字体文件的内容
+2.使用网络资源生成web字体
+3.使用
+    a.定义自定义字体
+    b.定义样式使用自定义字体
+    c.指定样式，调用样式
+<span class="myFont">开发人员可以为自已的网页指定特殊的字体，无需考虑用户电脑上是否安装了此特殊字体，从此把特殊字体处理成图片的时代便成为了过去。它的支持程度比较好，甚至IE低版本浏览器也能支持</span>
+</body>
+</html>
